@@ -37,13 +37,13 @@ For more details on data preparation, you can refer to [preparing_kinetics](/too
 You can use the following command to test a model.
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 Example: test ViT-base model on Kinetics-400 dataset and dump the result to a pkl file.
 
 ```shell
-python tools/test.py configs/recognition/videomaev2/vit-base-p16_videomaev2-vit-g-dist-k710-pre_16x4x1_kinetics-400.py \
+python tools/verification.py configs/recognition/videomaev2/vit-base-p16_videomaev2-vit-g-dist-k710-pre_16x4x1_kinetics-400.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
 ```
 

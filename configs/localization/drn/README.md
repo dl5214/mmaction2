@@ -55,7 +55,7 @@ bash tools/dist_train.sh configs/localization/drn/drn_2xb16-4096-10e_c3d-feature
 Test DRN on Charades STA C3D feature:
 
 ```shell
-python3 tools/test.py configs/localization/drn/drn_2xb16-4096-10e_c3d-feature_third.py CHECKPOINT.PTH
+python3 tools/verification.py configs/localization/drn/drn_2xb16-4096-10e_c3d-feature_third.py CHECKPOINT.PTH
 ```
 
 For more details, you can refer to the **Testing** part in the [Training and Test Tutorial](/docs/en/user_guides/train_test.md).

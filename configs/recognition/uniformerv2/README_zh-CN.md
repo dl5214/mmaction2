@@ -85,13 +85,13 @@
 您可以使用以下命令来测试模型：
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 示例：在 Kinetics-400 数据集上测试 UniFormerV2-B/16 模型，并将结果转储到一个pkl文件中。
 
 ```shell
-python tools/test.py configs/recognition/uniformerv2/uniformerv2-base-p16-res224_clip-kinetics710-pre_u8_kinetics400-rgb.py \
+python tools/verification.py configs/recognition/uniformerv2/uniformerv2-base-p16-res224_clip-kinetics710-pre_u8_kinetics400-rgb.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
 ```
 

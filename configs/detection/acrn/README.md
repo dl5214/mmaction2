@@ -56,13 +56,13 @@ For more details, you can refer to the **Training** part in the [Training and Te
 You can use the following command to test a model.
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 Example: test ACRN with SlowFast backbone on AVA2.1 and dump the result to a pkl file.
 
 ```shell
-python tools/test.py configs/detection/acrn/slowfast-acrn_kinetics400-pretrained-r50_8xb8-8x8x1-cosine-10e_ava21-rgb.py \
+python tools/verification.py configs/detection/acrn/slowfast-acrn_kinetics400-pretrained-r50_8xb8-8x8x1-cosine-10e_ava21-rgb.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
 ```
 

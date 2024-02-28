@@ -59,13 +59,13 @@ For more details, you can refer to the **Training** part in the [Training and Te
 You can use the following command to test a model.
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 Example: test CSN model on Kinetics-400 dataset and dump the result to a pkl file.
 
 ```shell
-python tools/test.py configs/recognition/csn/ircsn_ig65m-pretrained-r152_8xb12-32x2x1-58e_kinetics400-rgb.py \
+python tools/verification.py configs/recognition/csn/ircsn_ig65m-pretrained-r152_8xb12-32x2x1-58e_kinetics400-rgb.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
 ```
 

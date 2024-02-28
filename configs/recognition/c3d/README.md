@@ -51,13 +51,13 @@ For more details, you can refer to the **Training** part in the [Training and Te
 You can use the following command to test a model.
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 Example: test C3D model on UCF-101 dataset and dump the result to a pkl file.
 
 ```shell
-python tools/test.py configs/recognition/c3d_sports1m-pretrained_8xb30-16x1x1-45e_ucf101-rgb.py \
+python tools/verification.py configs/recognition/c3d_sports1m-pretrained_8xb30-16x1x1-45e_ucf101-rgb.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
 ```
 

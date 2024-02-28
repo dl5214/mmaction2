@@ -66,13 +66,13 @@ python tools/train.py configs/recognition/swin/swin-tiny-p244-w877_in1k-pre_8xb8
 用户可以使用以下指令进行模型测试。
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 例如：在 Kinetics-400 数据集上测试 VideoSwin 模型，并将结果导出为一个 pkl 文件。
 
 ```shell
-python tools/test.py configs/recognition/swin/swin-tiny-p244-w877_in1k-pre_8xb8-amp-32x2x1-30e_kinetics400-rgb.py \
+python tools/verification.py configs/recognition/swin/swin-tiny-p244-w877_in1k-pre_8xb8-amp-32x2x1-30e_kinetics400-rgb.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
 ```
 

@@ -46,7 +46,7 @@ For more details, you can refer to the **Training** part in the [Training and Te
 Test TCANet model on HACS dataset with the SlowOnly feature.
 
 ```shell
-python3 tools/test.py  configs/localization/tcanet/tcanet_2xb8-700x100-9e_hacs-feature.py CHECKPOINT.PTH
+python3 tools/verification.py  configs/localization/tcanet/tcanet_2xb8-700x100-9e_hacs-feature.py CHECKPOINT.PTH
 ```
 
 For more details, you can refer to the **Testing** part in the [Training and Test Tutorial](/docs/en/user_guides/train_test.md).

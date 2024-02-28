@@ -139,7 +139,7 @@ NNODES=2 NODE_RANK=1 PORT=$MASTER_PORT MASTER_ADDR=$MASTER_ADDR bash tools/dist_
 下面是脚本的完整用法：
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [ARGS]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [ARGS]
 ```
 
 ````{note}

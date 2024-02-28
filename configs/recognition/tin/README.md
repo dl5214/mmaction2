@@ -78,13 +78,13 @@ For more details, you can refer to the **Training** part in the [Training and Te
 You can use the following command to test a model.
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 Example: test TIN model on Something-Something V1 dataset and dump the result to a json file.
 
 ```shell
-python tools/test.py configs/recognition/tin/tin_imagenet-pretrained-r50_8xb6-1x1x8-40e_sthv1-rgb.py \
+python tools/verification.py configs/recognition/tin/tin_imagenet-pretrained-r50_8xb6-1x1x8-40e_sthv1-rgb.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.json
 ```
 

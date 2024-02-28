@@ -51,11 +51,11 @@ You can use the following command to infer feature bank of AVA training and vali
 
 ```shell
 # set `dataset_mode = 'train'` in lfb_slowonly_r50_ava_infer.py
-python tools/test.py configs/detection/lfb/slowonly-lfb-infer_r50_ava21-rgb.py \
+python tools/verification.py configs/detection/lfb/slowonly-lfb-infer_r50_ava21-rgb.py \
     checkpoints/YOUR_BASELINE_CHECKPOINT.pth
 
 # set `dataset_mode = 'val'` in lfb_slowonly_r50_ava_infer.py
-python tools/test.py configs/detection/lfb/slowonly-lfb-infer_r50_ava21-rgb.py \
+python tools/verification.py configs/detection/lfb/slowonly-lfb-infer_r50_ava21-rgb.py \
     checkpoints/YOUR_BASELINE_CHECKPOINT.pth
 ```
 
@@ -91,13 +91,13 @@ The step is the same with **Infer long-term feature bank for training** part in 
 You can use the following command to test a model.
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 Example: test LFB model on AVA with half-precision long-term feature bank and dump the result to a pkl file.
 
 ```shell
-python tools/test.py configs/detection/lfb/slowonly-lfb-nl_kinetics400-pretrained-r50_8xb12-4x16x1-20e_ava21-rgb.py \
+python tools/verification.py configs/detection/lfb/slowonly-lfb-nl_kinetics400-pretrained-r50_8xb12-4x16x1-20e_ava21-rgb.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
 ```
 

@@ -62,13 +62,13 @@ For more details, you can refer to the **Training** part in the [Training and Te
 You can use the following command to test a model.
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 Example: test CLIP4Clip model on MSRVTT-9k dataset and dump the result to a pkl file.
 
 ```shell
-python tools/test.py cconfigs/multimodal/vindlu/vindlu_beit-base_8x16_retrieval_msrvtt-9k.py \
+python tools/verification.py cconfigs/multimodal/vindlu/vindlu_beit-base_8x16_retrieval_msrvtt-9k.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
 ```
 

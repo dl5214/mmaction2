@@ -141,7 +141,7 @@ You can use `tools/test.py` to test a model on a single machine with a CPU and o
 Here is the full usage of the script:
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [ARGS]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [ARGS]
 ```
 
 ````{note}

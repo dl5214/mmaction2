@@ -34,13 +34,13 @@
 用户可以使用以下指令进行模型测试。
 
 ```shell
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
+python tools/verification.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [optional arguments]
 ```
 
 例如：在 Kinetics-400 数据集上测试 ViT-base 模型，并将结果导出为一个 pkl 文件。
 
 ```shell
-python tools/test.py configs/recognition/videomae/vit-base-p16_videomae-k400-pre_16x4x1_kinetics-400.py \
+python tools/verification.py configs/recognition/videomae/vit-base-p16_videomae-k400-pre_16x4x1_kinetics-400.py \
     checkpoints/SOME_CHECKPOINT.pth --dump result.pkl
 ```
 
